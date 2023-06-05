@@ -1,0 +1,137 @@
+@import url("../../colors.css");
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: var(--bg-orange);
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  font-size: 28px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  transition: all 0.4s ease;
+}
+.logo:hover {
+  transform: translateY(-1px);
+}
+.logo a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.btn {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 5px 4px 5px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.arrow-down {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -20px;
+  top: 4px;
+  display: none;
+  transition: all 0.4s ease;
+  transform: rotate(0deg);
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+  display: none;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:hover .arrow-down {
+  display: block;
+}
+.btn:hover .arrow-up {
+  display: block;
+}
+.profile-img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+}
+.profile-img img {
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: var(--amber-website);
+  min-width: 200px;
+  right: 0;
+  top: 62px;
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.dropdown-menu li {
+  list-style: none;
+  padding: 4px;
+}
+.dropdown-menu li a {
+  text-decoration: none;
+  color: var(--text-website);
+  transition: all 0.4s ease;
+  font-size: 20px;
+}
+.dropdown-menu li a:hover {
+  color: var(--primary-website);
+}
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown-item {
+  display: flex;
+  gap: 10px;
+}
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 5px;
+}
+.cart a {
+  text-decoration: none;
+  color: white;
+}
+.cart .qty {
+  position: absolute;
+  top: -12px;
+  right: -10px;
+  font-size: 20px;
+}

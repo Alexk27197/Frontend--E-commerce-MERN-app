@@ -1,0 +1,11 @@
+:root {
+  /*Navbar colors */
+  --bg-orange: #ff5722;
+  --text-color: #fff;
+  --hover: #ff7043;
+  /*Website Colors */
+  --primary-website: #ff5722; /*Deep orange */
+  --amber-website: #ffc107; /* Amber */
+  --bg-website: #ffffff;
+  --text-website: #333333; /*Deep orange */
+}
